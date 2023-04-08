@@ -1,7 +1,15 @@
 main .about{
     margin-top: 100px;
     width: 100%;
+
+    background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(32, 136, 255, 0.682) 0%),url("https://preview.colorlib.com/theme/waterboat/images/hero_1.jpg.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top ;
+        background-attachment: fixed;
     .about-container{
+        background-color: $primary-white;
+        z-index: 1;
         padding: 0 100px;
 
         .row{
@@ -70,9 +78,11 @@ main .about{
 
 
     .about-experience{
-        margin-top: 100px;
-        padding: 0 100px;
+        background-color: $primary-white;
+        // margin-top: 100px;
+        padding: 100px 100px;
         width: 100%;
+        z-index: 1;
         .row{
             display: flex;
             flex-direction: row;
@@ -137,6 +147,61 @@ main .about{
     }
     }
 
+   .counts{
+       
+        padding: 80px 100px;
+        .counts-container{
+            .row{
+                display: flex;
+                justify-content: center;
+
+                @include for-tablet-landscape-up{
+                    display: flex;
+                    flex-direction: row;
+
+                    .col-md-4{
+                        width: 40%;
+                    }
+
+                }
+
+                @include for-mobile-landscape-up{
+                    display: flex;
+                    flex-direction: row;
+
+                    .col-sm-8{
+                        width: 60%;
+                    }
+
+                }
+                .col-2{
+                    .counts-card{
+                        .counts-text{
+                            text-align: center;
+                            h3{
+                                color: $primary-white;
+                                font-size: 50px;
+                                font-family: $font-openSans;
+                            }
+    
+                            span{
+                                color: $primary-white;
+                                font-size: 17px;
+                                font-family: $font-openSans;
+                                font-weight: 200;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    
+
+
+    
 
    
 }

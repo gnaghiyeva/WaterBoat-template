@@ -1,0 +1,118 @@
+main .destinations{
+    width: 100%;
+    margin-top: 100px;
+    
+    .destinations-container{
+       margin: 0 auto;
+        width: 80%;
+        .destinations-titles{
+            article{
+                text-align: center;
+                span{
+                    font-family: $font-dancing;
+                    font-size: 17px;
+                    color: $primary-blue;
+                }
+
+                h3{
+                    font-size: 28px;
+                    font-family: $font-oswald;
+                    color: $primary-black;
+                 
+                    
+                    &::after{
+                        content: '';
+                        border-bottom: 2px solid $primary-blue;
+                        width: 50px;
+                    }
+                }
+                // hr{
+                //     width: 50px;
+                //     color: $primary-blue;
+                //     border: 2px solid;
+
+                // }
+            }
+        }
+
+    
+            .row{
+                margin-top: 100px;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+
+      
+                @include for-tablet-landscape-up{
+                    display: flex;
+                    flex-direction: row;
+                    
+                    .col-md-6{
+                       width: 50%;
+                    }
+                  }
+
+                  @include for-mobile-landscape-up{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    .col-sm-12{
+                       width: 100%;
+                       
+                    }
+                  }
+                     
+
+                .col-4{
+                    width: 30%;
+                    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+                 .destination-card{
+                        // border: 1px solid teal;
+                        
+                        .destination-image{
+                            img{
+                                width: 100%;
+
+                            }
+                        }
+                        .destination-texts{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            padding-bottom: 10px;
+                            padding-top: 10px;
+                            .destination-icon{
+                                i{
+
+                                }
+                                small{
+                                    font-size: 18px;
+                                    font-family: $font-oswald;
+
+                                    &:last-of-type{
+                                        color: $primary-gray;
+                                        font-weight: 100;
+                                    }
+                                }
+                            }
+
+                            .destination-button{
+                                button{
+                                    @extend %button;
+                                    padding: 10px 25px;
+                                    border-radius: 4px;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
+    }
+}

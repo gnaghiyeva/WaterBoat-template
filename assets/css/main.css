@@ -228,7 +228,7 @@
     width: 100%;
   }
 }
-main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
+main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-button button, main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
   margin-top: 20px;
   padding: 20px 35px;
   background-color: #2089ff;
@@ -238,11 +238,11 @@ main .about .about-container .row .col-6 .about-texts article button, main .hero
   border-radius: 7px;
   font-weight: 700;
 }
-main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
+main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-button button:hover, main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
   cursor: pointer;
 }
 
-main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
+main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-button button, main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
   margin-top: 20px;
   padding: 20px 35px;
   background-color: #2089ff;
@@ -252,7 +252,7 @@ main .about .about-container .row .col-6 .about-texts article button, main .hero
   border-radius: 7px;
   font-weight: 700;
 }
-main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
+main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-button button:hover, main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
   cursor: pointer;
 }
 
@@ -442,8 +442,15 @@ main .hero .hero-texts article p {
 main .about {
   margin-top: 100px;
   width: 100%;
+  background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(32, 136, 255, 0.682) 0%), url("https://preview.colorlib.com/theme/waterboat/images/hero_1.jpg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
 }
 main .about .about-container {
+  background-color: white;
+  z-index: 1;
   padding: 0 100px;
 }
 main .about .about-container .row {
@@ -491,9 +498,10 @@ main .about .about-container .row .col-6 .about-texts article p {
   letter-spacing: 1px;
 }
 main .about .about-experience {
-  margin-top: 100px;
-  padding: 0 100px;
+  background-color: white;
+  padding: 100px 100px;
   width: 100%;
+  z-index: 1;
 }
 main .about .about-experience .row {
   display: flex;
@@ -542,4 +550,124 @@ main .about .about-experience .row .col-4 .experience-card .experience-texts art
   font-family: Oswald;
   font-weight: 200;
   letter-spacing: 1px;
+}
+main .about .counts {
+  padding: 80px 100px;
+}
+main .about .counts .counts-container .row {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  main .about .counts .counts-container .row {
+    display: flex;
+    flex-direction: row;
+  }
+  main .about .counts .counts-container .row .col-md-4 {
+    width: 40%;
+  }
+}
+@media (max-width: 576px) {
+  main .about .counts .counts-container .row {
+    display: flex;
+    flex-direction: row;
+  }
+  main .about .counts .counts-container .row .col-sm-8 {
+    width: 60%;
+  }
+}
+main .about .counts .counts-container .row .col-2 .counts-card .counts-text {
+  text-align: center;
+}
+main .about .counts .counts-container .row .col-2 .counts-card .counts-text h3 {
+  color: white;
+  font-size: 50px;
+  font-family: Open Sans;
+}
+main .about .counts .counts-container .row .col-2 .counts-card .counts-text span {
+  color: white;
+  font-size: 17px;
+  font-family: Open Sans;
+  font-weight: 200;
+}
+
+main .destinations {
+  width: 100%;
+  margin-top: 100px;
+}
+main .destinations .destinations-container {
+  margin: 0 auto;
+  width: 80%;
+}
+main .destinations .destinations-container .destinations-titles article {
+  text-align: center;
+}
+main .destinations .destinations-container .destinations-titles article span {
+  font-family: Dancing Script;
+  font-size: 17px;
+  color: #2089ff;
+}
+main .destinations .destinations-container .destinations-titles article h3 {
+  font-size: 28px;
+  font-family: Oswald;
+  color: black;
+}
+main .destinations .destinations-container .destinations-titles article h3::after {
+  content: "";
+  border-bottom: 2px solid #2089ff;
+  width: 50px;
+}
+main .destinations .destinations-container .row {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  main .destinations .destinations-container .row {
+    display: flex;
+    flex-direction: row;
+  }
+  main .destinations .destinations-container .row .col-md-6 {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  main .destinations .destinations-container .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .destinations .destinations-container .row .col-sm-12 {
+    width: 100%;
+  }
+}
+main .destinations .destinations-container .row .col-4 {
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+main .destinations .destinations-container .row .col-4 .destination-card .destination-image img {
+  width: 100%;
+}
+main .destinations .destinations-container .row .col-4 .destination-card .destination-texts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-icon small {
+  font-size: 18px;
+  font-family: Oswald;
+}
+main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-icon small:last-of-type {
+  color: #808080;
+  font-weight: 100;
+}
+main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-button button {
+  padding: 10px 25px;
+  border-radius: 4px;
 }/*# sourceMappingURL=main.css.map */
