@@ -228,9 +228,9 @@
     width: 100%;
   }
 }
-main .hero .hero-texts article button {
+main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
   margin-top: 20px;
-  padding: 20px 50px;
+  padding: 20px 35px;
   background-color: #2089ff;
   border: none;
   color: white;
@@ -238,13 +238,13 @@ main .hero .hero-texts article button {
   border-radius: 7px;
   font-weight: 700;
 }
-main .hero .hero-texts article button:hover {
+main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
   cursor: pointer;
 }
 
-main .hero .hero-texts article button {
+main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
   margin-top: 20px;
-  padding: 20px 50px;
+  padding: 20px 35px;
   background-color: #2089ff;
   border: none;
   color: white;
@@ -252,7 +252,7 @@ main .hero .hero-texts article button {
   border-radius: 7px;
   font-weight: 700;
 }
-main .hero .hero-texts article button:hover {
+main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
   cursor: pointer;
 }
 
@@ -438,4 +438,108 @@ main .hero .hero-texts article p {
   line-height: 2em;
   font-weight: 300;
   letter-spacing: 2px;
+}
+main .about {
+  margin-top: 100px;
+  width: 100%;
+}
+main .about .about-container {
+  padding: 0 100px;
+}
+main .about .about-container .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  main .about .about-container .row {
+    display: flex;
+    flex-direction: column;
+  }
+  main .about .about-container .row .col-md-6 {
+    width: 100%;
+  }
+}
+main .about .about-container .row .col-6 .about-image img {
+  width: 100%;
+}
+main .about .about-container .row .col-6 .about-texts {
+  padding: 0 50px;
+}
+main .about .about-container .row .col-6 .about-texts article span {
+  color: #2089ff;
+  font-family: Dancing Script;
+  font-size: 17px;
+}
+main .about .about-container .row .col-6 .about-texts article h3 {
+  font-size: 28px;
+  font-family: Oswald;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+main .about .about-container .row .col-6 .about-texts article hr {
+  width: 60px;
+  border: 2px solid;
+  color: #2089ff;
+}
+main .about .about-container .row .col-6 .about-texts article p {
+  padding-top: 20px;
+  color: #808080;
+  font-size: 20px;
+  font-family: Oswald;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+main .about .about-experience {
+  margin-top: 100px;
+  padding: 0 100px;
+  width: 100%;
+}
+main .about .about-experience .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  main .about .about-experience .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 5px;
+  }
+  main .about .about-experience .row .col-md-6 {
+    width: 48%;
+  }
+}
+@media (max-width: 576px) {
+  main .about .about-experience .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 5px;
+  }
+  main .about .about-experience .row .col-sm-12 {
+    width: 100%;
+  }
+}
+main .about .about-experience .row .col-4 .experience-card .experience-image i {
+  font-size: 40px;
+}
+main .about .about-experience .row .col-4 .experience-card .experience-texts article {
+  padding-top: 20px;
+}
+main .about .about-experience .row .col-4 .experience-card .experience-texts article h3 {
+  font-size: 20px;
+  font-family: Oswald;
+  font-weight: 500;
+}
+main .about .about-experience .row .col-4 .experience-card .experience-texts article p {
+  padding-top: 15px;
+  color: #808080;
+  font-size: 20px;
+  line-height: 1.3em;
+  font-family: Oswald;
+  font-weight: 200;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=main.css.map */

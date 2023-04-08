@@ -1,0 +1,142 @@
+main .about{
+    margin-top: 100px;
+    width: 100%;
+    .about-container{
+        padding: 0 100px;
+
+        .row{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+           
+            @include for-tablet-landscape-up{
+                display: flex;
+                flex-direction: column;
+
+                .col-md-6{
+                    width: 100%;
+                }
+            }
+            .col-6{
+                // border: 3px solid orchid;
+                .about-image{
+                    // border: 2px solid orange;
+                    
+                    img{
+                       width: 100%;
+                    };
+                }
+            }
+
+            .col-6{
+                // border: 3px solid orchid;
+                .about-texts{
+                    padding: 0 50px;
+                    article{
+                        span{
+                            color: $primary-blue;
+                            font-family: $font-dancing;
+                            font-size: 17px;
+                        }
+                        h3{
+                            font-size: 28px;
+                            font-family: $font-oswald;
+                            font-weight: 400;
+                            padding-bottom: 20px;
+                        }
+                        hr{
+                            width: 60px;
+                            border: 2px solid;
+                            color: $primary-blue;
+                        }
+                        p{
+                            padding-top: 20px;
+                            color: $primary-gray;
+                            font-size: 20px;
+                            font-family: $font-oswald;
+                            font-weight: 200;
+                            letter-spacing: 1px;
+                        }
+
+                        button{
+                            @extend %button;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .about-experience{
+        margin-top: 100px;
+        padding: 0 100px;
+        width: 100%;
+        .row{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            @include for-tablet-landscape-up{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                gap: 5px;
+
+                .col-md-6{
+                    width: 48%;
+                }
+            }
+
+            @include for-mobile-landscape-up{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                gap: 5px;
+
+                .col-sm-12{
+                    width: 100%;
+                }
+            }
+
+            
+            .col-4{
+                .experience-card{
+                    // border: 2px solid green;
+              
+                    .experience-image{
+                i{
+                    font-size: 40px;
+
+                }
+               } 
+
+               .experience-texts{
+                article{
+                    padding-top: 20px;
+                    h3{
+                        font-size: 20px;
+                        font-family: $font-oswald;
+                        font-weight: 500;
+                    }
+                    p{
+                        padding-top: 15px;
+                        color: $primary-gray;
+                        font-size: 20px;
+                        line-height: 1.3em;
+                        font-family: $font-oswald;
+                        font-weight: 200;
+                        letter-spacing: 1px;
+                    }
+                }
+               }
+            }
+        }
+    }
+    }
+
+
+   
+}
