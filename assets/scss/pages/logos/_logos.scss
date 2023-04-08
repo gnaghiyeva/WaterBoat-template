@@ -1,0 +1,100 @@
+header{
+//   position: sticky;
+//    z-index: 1;
+//    top: 0px;
+
+
+.header-container{
+   width: 100%;
+   padding: 40px 30px;  
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ 
+  
+   
+   
+
+   
+//    border-bottom: solid;
+
+   #hamburger{
+    display: none;
+    font-size: 25px;
+
+    @include for-tablet-landscape-up{
+        display: block;
+        padding: 0;
+        
+    }
+}
+
+
+    .header-left{
+        width: 20%;
+        // border: solid;
+        .header-image{
+            // border: solid;
+            width: 70%;
+            margin: 0 auto;
+
+            img{
+               padding: 0 40px;
+
+            }
+        }
+    }
+
+    .header-right{
+        width: 70%;
+        // border: solid;
+
+        
+        @include for-tablet-landscape-up{
+            display: none;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            
+           
+            .col-3{
+                .header-card{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    .header-icon{
+                        i{
+                            padding: 10px;
+                            font-size: 16px;
+                            background-color: $primary-blue;
+                            border-radius: 50%;
+
+                        }
+                    }
+
+                    .header-texts{
+                        article{
+                            h4{
+                                font-size: 1.2em;
+                                color: $primary-black;
+                                font-family: $font-oswald;
+                                font-weight: 400;
+
+                            }
+                            span{
+                                color: $primary-gray;
+                                font-size: 1em;
+                                letter-spacing: 0.3;
+                                font-family: $font-openSans;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+}

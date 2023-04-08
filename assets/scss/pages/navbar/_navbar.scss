@@ -1,0 +1,38 @@
+.nav-container{
+
+    width: 100%;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+    @include for-tablet-landscape-up{
+        display: none;
+    }
+
+    nav{
+        background-color: $primary-blue;
+         padding: 30px 0;
+        .nav-wrapper{
+            ul{
+                display: flex;
+                justify-content: center;
+                gap: 50px;
+
+                li{
+                    &:nth-child(1) a{
+                        text-decoration: underline;
+                        color: $primary-white;
+                        
+                    }
+                    a{
+                        font-family: $font-oswald;
+                        color: $primary-white;
+                        font-size: 17px;
+                        font-weight: 600;
+
+                        
+                    }
+                }
+            }
+        }
+    }
+}
