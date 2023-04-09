@@ -817,4 +817,81 @@ main .book-now .row .col-6 .book-form form .textarea #textarea {
 }
 main .book-now .row .col-6 .book-button button {
   border-radius: 5px;
+}
+
+main .team {
+  margin-top: 100px;
+}
+main .team .team-container .team-texts {
+  text-align: center;
+}
+main .team .team-container .team-texts article span {
+  font-size: 17px;
+  font-family: Dancing Script;
+  color: #2089ff;
+}
+main .team .team-container .team-texts article h3 {
+  font-size: 28px;
+  font-family: Oswald;
+  font-weight: 400;
+}
+main .team .team-container .row {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+@media (max-width: 992px) {
+  main .team .team-container .row .col-md-4 {
+    width: 33%;
+  }
+}
+@media (max-width: 576px) {
+  main .team .team-container .row .col-sm-8 {
+    width: 60%;
+  }
+}
+main .team .team-container .row .col-2 .team-card .team-card-image {
+  position: relative;
+}
+main .team .team-container .row .col-2 .team-card .team-card-image img {
+  width: 100%;
+  transition: 0.4s;
+}
+main .team .team-container .row .col-2 .team-card .team-card-image img:hover {
+  width: 100%;
+  transform: scale(1.1);
+}
+main .team .team-container .row .col-2 .team-card .team-card-image .card-image-icons {
+  position: absolute;
+  left: 3%;
+  bottom: 5%;
+}
+main .team .team-container .row .col-2 .team-card .team-card-image .card-image-icons ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+main .team .team-container .row .col-2 .team-card .team-card-image .card-image-icons ul li i {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  transition: 0.5s;
+}
+main .team .team-container .row .col-2 .team-card .team-card-image .card-image-icons ul li i:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+main .team .team-container .row .col-2 .team-card .team-card-text {
+  text-align: center;
+}
+main .team .team-container .row .col-2 .team-card .team-card-text h3 {
+  font-size: 28px;
+  font-family: Oswald;
+  font-weight: 400;
+}
+main .team .team-container .row .col-2 .team-card .team-card-text span {
+  font-size: 17px;
+  font-family: Open Sans;
+  color: #2089ff;
 }/*# sourceMappingURL=main.css.map */
