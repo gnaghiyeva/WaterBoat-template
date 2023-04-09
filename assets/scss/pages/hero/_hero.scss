@@ -101,6 +101,11 @@ main .hero{
         }
         button{
             @extend %button;
+            transition: .5s;
+
+            &:hover{
+                background-color: #1355a0;
+            }
         }
     }
    }

@@ -1,0 +1,108 @@
+footer .footer-container{
+    background-color: #edebeb96;
+padding: 50px 100px;
+    .row{
+
+        @include for-tablet-landscape-up{
+            .col-md-12{
+                width: 100%;
+            }
+            
+        }
+
+        .col-3.intro{
+            .footer-card{
+                // border: 2px solid indigo;
+
+                .footer-image{
+                     width: 30%;
+                    img{
+                     width: 100%;
+                    }
+                }
+
+                .footer-text{
+                    article{
+                        p{
+                            padding-top: 10px;
+                            font-size: 15px;
+                            color: #888888;
+                            font-family: $font-openSans;
+                            font-weight: 200;
+                        }
+                        a{
+                            
+                            color: $primary-blue;
+                            font-family: $font-openSans;
+                            font-weight: 200;
+                            
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .col-3{
+            .footer-card{
+                // border: 2px solid sandybrown;
+                span{
+                  
+                  font-size: 16px;
+                  font-family: $font-oswald;
+                  text-decoration: underline $primary-blue;
+                }
+
+                ul{
+                    padding-top: 25px; 
+                    li{
+                        line-height: 2.4em;
+                        a{
+                            font-size: 15px;
+                            color: $primary-blue;
+                            font-family: $font-openSans;
+                            font-family: 200;
+                            transition: .5s;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-final{
+        padding: 80px 0;
+        text-align: center;
+        font-family: 200;
+
+        @include for-tablet-landscape-up{
+            p{
+                font-size: 13px ;
+            }
+        }
+        @include for-mobile-landscape-up{
+            p{
+                font-size: 8px ;
+            }
+        }
+
+        p{
+            font-family: $font-openSans;
+            color: $primary-gray;
+
+            a{
+                color: $primary-blue;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
