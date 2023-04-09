@@ -4,7 +4,8 @@ main .destinations{
     
     .destinations-container{
        margin: 0 auto;
-        width: 80%;
+       padding: 0 100px;
+        
         .destinations-titles{
             article{
                 text-align: center;
@@ -37,36 +38,30 @@ main .destinations{
 
     
             .row{
-                margin-top: 100px;
+                // width: 100%;
+                // margin-top: 100px;
                 display: flex;
+                flex-direction: row;
                 justify-content: center;
-                gap: 20px;
+                align-items: center;
+                gap: 30px;
 
       
                 @include for-tablet-landscape-up{
-                    display: flex;
-                    flex-direction: row;
-                    
-                    .col-md-6{
-                       width: 50%;
-                    }
-                  }
+                   .col-md-6{
+                    width: 40%;
+                   } 
+                }
 
-                  @include for-mobile-landscape-up{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    
+                @include for-mobile-landscape-up{
                     .col-sm-12{
-                       width: 100%;
-                       
-                    }
-                  }
-                     
+                     width: 100%;
+                    } 
+                 }
 
-                .col-4{
-                    width: 30%;
+                  
+
+                .col-3{
                     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
                  .destination-card{

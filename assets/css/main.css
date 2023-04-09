@@ -228,7 +228,7 @@
     width: 100%;
   }
 }
-main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-button button, main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
+main .book-now .row .col-6 .book-button button, main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-button button, main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
   margin-top: 20px;
   padding: 20px 35px;
   background-color: #2089ff;
@@ -238,11 +238,11 @@ main .destinations .destinations-container .row .col-4 .destination-card .destin
   border-radius: 7px;
   font-weight: 700;
 }
-main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-button button:hover, main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
+main .book-now .row .col-6 .book-button button:hover, main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-button button:hover, main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
   cursor: pointer;
 }
 
-main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-button button, main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
+main .book-now .row .col-6 .book-button button, main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-button button, main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
   margin-top: 20px;
   padding: 20px 35px;
   background-color: #2089ff;
@@ -252,7 +252,7 @@ main .destinations .destinations-container .row .col-4 .destination-card .destin
   border-radius: 7px;
   font-weight: 700;
 }
-main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-button button:hover, main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
+main .book-now .row .col-6 .book-button button:hover, main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-button button:hover, main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
   cursor: pointer;
 }
 
@@ -597,7 +597,7 @@ main .destinations {
 }
 main .destinations .destinations-container {
   margin: 0 auto;
-  width: 80%;
+  padding: 0 100px;
 }
 main .destinations .destinations-container .destinations-titles article {
   text-align: center;
@@ -618,39 +618,29 @@ main .destinations .destinations-container .destinations-titles article h3::afte
   width: 50px;
 }
 main .destinations .destinations-container .row {
-  margin-top: 100px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 30px;
 }
 @media (max-width: 992px) {
-  main .destinations .destinations-container .row {
-    display: flex;
-    flex-direction: row;
-  }
   main .destinations .destinations-container .row .col-md-6 {
-    width: 50%;
+    width: 40%;
   }
 }
 @media (max-width: 576px) {
-  main .destinations .destinations-container .row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   main .destinations .destinations-container .row .col-sm-12 {
     width: 100%;
   }
 }
-main .destinations .destinations-container .row .col-4 {
-  width: 30%;
+main .destinations .destinations-container .row .col-3 {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-main .destinations .destinations-container .row .col-4 .destination-card .destination-image img {
+main .destinations .destinations-container .row .col-3 .destination-card .destination-image img {
   width: 100%;
 }
-main .destinations .destinations-container .row .col-4 .destination-card .destination-texts {
+main .destinations .destinations-container .row .col-3 .destination-card .destination-texts {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -659,15 +649,131 @@ main .destinations .destinations-container .row .col-4 .destination-card .destin
   padding-bottom: 10px;
   padding-top: 10px;
 }
-main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-icon small {
+main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-icon small {
   font-size: 18px;
   font-family: Oswald;
 }
-main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-icon small:last-of-type {
+main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-icon small:last-of-type {
   color: #808080;
   font-weight: 100;
 }
-main .destinations .destinations-container .row .col-4 .destination-card .destination-texts .destination-button button {
+main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-button button {
   padding: 10px 25px;
   border-radius: 4px;
+}
+
+main .book-now {
+  margin-top: 100px;
+  width: 100%;
+  padding: 0 100px;
+}
+main .book-now .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  main .book-now .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .book-now .row .col-md-6 {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  main .book-now .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .book-now .row .col-sm-12 {
+    width: 100%;
+  }
+  main .book-now .row input {
+    width: 100%;
+  }
+}
+main .book-now .row .col-6 .book-image img {
+  width: 100%;
+  padding: 0 20px;
+}
+main .book-now .row .col-6 .book-texts {
+  padding: 0 10px;
+}
+main .book-now .row .col-6 .book-texts article span {
+  color: #2089ff;
+  font-family: Dancing Script;
+  font-size: 17px;
+}
+main .book-now .row .col-6 .book-texts article h3 {
+  font-size: 28px;
+  font-family: Oswald;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+main .book-now .row .col-6 .book-texts article hr {
+  width: 60px;
+  border: 2px solid;
+  color: #2089ff;
+}
+main .book-now .row .col-6 .book-form {
+  padding: 30px 0px;
+}
+main .book-now .row .col-6 .book-form form {
+  font-family: Open Sans;
+}
+main .book-now .row .col-6 .book-form form .part-1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .book-now .row .col-6 .book-form form .part-1 .col-6 label {
+  font-size: 18px;
+  color: #808080;
+}
+main .book-now .row .col-6 .book-form form .part-1 .col-6 input {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+}
+main .book-now .row .col-6 .book-form form .choose label {
+  font-size: 18px;
+  color: #808080;
+}
+main .book-now .row .col-6 .book-form form .choose #select {
+  width: 50%;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+main .book-now .row .col-6 .book-form form .choose #select option {
+  font-size: 18px;
+  color: #808080;
+}
+main .book-now .row .col-6 .book-form form .part-3 {
+  display: flex;
+}
+main .book-now .row .col-6 .book-form form .part-3 .col-6 label {
+  font-size: 18px;
+  color: #808080;
+}
+main .book-now .row .col-6 .book-form form .part-3 .col-6 input {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+}
+main .book-now .row .col-6 .book-form form .textarea label {
+  font-size: 18px;
+  color: #808080;
+}
+main .book-now .row .col-6 .book-form form .textarea #textarea {
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid #808080;
+}
+main .book-now .row .col-6 .book-button button {
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */

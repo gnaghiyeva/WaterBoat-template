@@ -1,0 +1,184 @@
+main .book-now {
+    margin-top: 100px;
+    width: 100%;
+    padding: 0 100px;
+
+    // background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(32, 136, 255, 0.682) 0%),url("https://preview.colorlib.com/theme/waterboat/images/hero_1.jpg.webp");
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     background-position: top ;
+    //     background-attachment: fixed;
+    // .book-container{
+    //     background-color: $primary-white;
+    //     z-index: 1;
+    //     padding: 0 100px;
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @include for-tablet-landscape-up{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .col-md-6{
+                width: 100%;
+            }
+        }
+
+        @include for-mobile-landscape-up{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .col-sm-12{
+                width: 100%;
+            }
+
+            input{
+                width: 100%;
+            }
+        }
+        .col-6 {
+
+            // border: 3px solid orchid;
+            .book-image {
+                // border: 2px solid orange;
+
+                img {
+                    width: 100%;
+                    padding: 0 20px;
+                }
+
+                ;
+            }
+        }
+
+        .col-6 {
+            // border: 3px solid orchid;
+
+            .book-texts {
+                padding: 0 10px;
+
+                article {
+                    span {
+                        color: $primary-blue;
+                        font-family: $font-dancing;
+                        font-size: 17px;
+                    }
+
+                    h3 {
+                        font-size: 28px;
+                        font-family: $font-oswald;
+                        font-weight: 400;
+                        padding-bottom: 20px;
+                    }
+
+                    hr {
+                        width: 60px;
+                        border: 2px solid;
+                        color: $primary-blue;
+                    }
+
+                }
+            }
+
+            .book-form {
+                padding: 30px 0px;
+
+                form {
+                    font-family: $font-openSans;
+                    
+
+                    .part-1 {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        
+
+                        .col-6 {
+                           
+                            label {
+
+                                font-size: 18px;
+                                color: $primary-gray;
+                            }
+
+                            input {
+                                
+                                padding: 6px 12px;
+                                border-radius: 5px;
+                                border: 1px solid $primary-gray;
+                            }
+                        }
+                    }
+
+                    .choose{
+                        // border: 1px solid red;
+
+                        label{
+                            font-size: 18px;
+                            color: $primary-gray;
+                        }
+
+                        #select{
+                            width: 50%;
+                            padding: 6px 12px;
+                            border-radius: 5px;
+                            option{
+                                font-size: 18px;
+                                color: $primary-gray;
+                            }
+                        }
+
+                    }
+
+                    .part-3{
+                        display: flex;
+
+                        .col-6{
+                            label {
+                                font-size: 18px;
+                                color: $primary-gray;
+                            }
+
+                            input {
+                                padding: 6px 12px;
+                                border-radius: 5px;
+                                border: 1px solid $primary-gray;
+                            }
+
+
+                        }
+                    }
+
+                    .textarea{
+                        // border: 1px solid red;
+                        label{
+                            font-size: 18px;
+                            color: $primary-gray;
+                        }
+                        #textarea{
+                            width: 50%;
+                            border-radius: 5px;
+                            border: 1px solid $primary-gray;
+                        }
+
+                    }
+                }
+            }
+
+            .book-button{
+                button{
+                    @extend %button;
+                    border-radius: 5px;
+                }
+            }
+
+        }
+    }
+}
