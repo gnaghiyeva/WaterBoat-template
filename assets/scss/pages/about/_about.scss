@@ -68,7 +68,10 @@ main .about{
 
                         button{
                             @extend %button;
-                            
+                            transition: .5s;
+                            &:hover{
+                                background-color: #1a59a1;
+                            }
                         }
                     }
                 }

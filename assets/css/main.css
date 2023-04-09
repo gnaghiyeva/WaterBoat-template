@@ -228,7 +228,7 @@
     width: 100%;
   }
 }
-main .book-now .row .col-6 .book-button button, main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-button button, main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
+main .contact .contact-container .contact-texts article button, main .book-now .row .col-5 .book-button button, main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-button button, main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
   margin-top: 20px;
   padding: 20px 35px;
   background-color: #2089ff;
@@ -238,11 +238,11 @@ main .book-now .row .col-6 .book-button button, main .destinations .destinations
   border-radius: 7px;
   font-weight: 700;
 }
-main .book-now .row .col-6 .book-button button:hover, main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-button button:hover, main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
+main .contact .contact-container .contact-texts article button:hover, main .book-now .row .col-5 .book-button button:hover, main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-button button:hover, main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
   cursor: pointer;
 }
 
-main .book-now .row .col-6 .book-button button, main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-button button, main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
+main .contact .contact-container .contact-texts article button, main .book-now .row .col-5 .book-button button, main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-button button, main .about .about-container .row .col-6 .about-texts article button, main .hero .hero-texts article button {
   margin-top: 20px;
   padding: 20px 35px;
   background-color: #2089ff;
@@ -252,7 +252,7 @@ main .book-now .row .col-6 .book-button button, main .destinations .destinations
   border-radius: 7px;
   font-weight: 700;
 }
-main .book-now .row .col-6 .book-button button:hover, main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-button button:hover, main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
+main .contact .contact-container .contact-texts article button:hover, main .book-now .row .col-5 .book-button button:hover, main .destinations .destinations-container .row .col-3 .destination-card .destination-texts .destination-button button:hover, main .about .about-container .row .col-6 .about-texts article button:hover, main .hero .hero-texts article button:hover {
   cursor: pointer;
 }
 
@@ -497,6 +497,12 @@ main .about .about-container .row .col-6 .about-texts article p {
   font-weight: 200;
   letter-spacing: 1px;
 }
+main .about .about-container .row .col-6 .about-texts article button {
+  transition: 0.5s;
+}
+main .about .about-container .row .col-6 .about-texts article button:hover {
+  background-color: #1a59a1;
+}
 main .about .about-experience {
   background-color: white;
   padding: 100px 100px;
@@ -697,130 +703,143 @@ main .book-now .row {
     width: 100%;
   }
 }
-main .book-now .row .col-6 .book-image img {
+main .book-now .row .col-7 .book-image img {
   width: 100%;
   padding: 0 20px;
 }
-main .book-now .row .col-6 .book-texts {
+main .book-now .row .col-5 .book-texts {
   padding: 0 10px;
 }
-main .book-now .row .col-6 .book-texts article span {
+main .book-now .row .col-5 .book-texts article span {
   color: #2089ff;
   font-family: Dancing Script;
   font-size: 17px;
 }
-main .book-now .row .col-6 .book-texts article h3 {
+main .book-now .row .col-5 .book-texts article h3 {
   font-size: 28px;
   font-family: Oswald;
   font-weight: 400;
   padding-bottom: 20px;
 }
-main .book-now .row .col-6 .book-texts article hr {
+main .book-now .row .col-5 .book-texts article hr {
   width: 60px;
   border: 2px solid;
   color: #2089ff;
 }
-main .book-now .row .col-6 .book-form {
+main .book-now .row .col-5 .book-form {
   padding: 30px 0px;
 }
-main .book-now .row .col-6 .book-form form {
+main .book-now .row .col-5 .book-form form {
   font-family: Open Sans;
 }
-main .book-now .row .col-6 .book-form form .part-1 {
+main .book-now .row .col-5 .book-form form .part-1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-main .book-now .row .col-6 .book-form form .part-1 .col-6 label {
+main .book-now .row .col-5 .book-form form .part-1 .col-6 label {
   font-size: 18px;
   color: #808080;
 }
-main .book-now .row .col-6 .book-form form .part-1 .col-6 input {
+main .book-now .row .col-5 .book-form form .part-1 .col-6 input {
   padding: 6px 12px;
   border-radius: 5px;
   border: 1px solid #808080;
 }
 @media (max-width: 992px) {
-  main .book-now .row .col-6 .book-form form .part-1 .col-6 input {
+  main .book-now .row .col-5 .book-form form .part-1 .col-6 input {
     width: 90%;
   }
 }
-main .book-now .row .col-6 .book-form form .part-2 {
+main .book-now .row .col-5 .book-form form .part-2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-main .book-now .row .col-6 .book-form form .part-2 .col-6 label {
+main .book-now .row .col-5 .book-form form .part-2 .col-6 label {
   font-size: 18px;
   color: #808080;
 }
-main .book-now .row .col-6 .book-form form .part-2 .col-6 input {
+main .book-now .row .col-5 .book-form form .part-2 .col-6 input {
   padding: 6px 12px;
   border-radius: 5px;
   border: 1px solid #808080;
 }
 @media (max-width: 992px) {
-  main .book-now .row .col-6 .book-form form .part-2 .col-6 input {
+  main .book-now .row .col-5 .book-form form .part-2 .col-6 input {
     width: 90%;
   }
 }
-main .book-now .row .col-6 .book-form form .choose label {
+main .book-now .row .col-5 .book-form form .choose label {
   font-size: 18px;
   color: #808080;
 }
-main .book-now .row .col-6 .book-form form .choose #select {
+main .book-now .row .col-5 .book-form form .choose #select {
   width: 100%;
   padding: 6px 12px;
   border-radius: 5px;
 }
-main .book-now .row .col-6 .book-form form .choose #select option {
+main .book-now .row .col-5 .book-form form .choose #select option {
   font-size: 18px;
   color: #808080;
 }
 @media (max-width: 992px) {
-  main .book-now .row .col-6 .book-form form .choose #select {
+  main .book-now .row .col-5 .book-form form .choose #select {
     width: 90%;
   }
 }
-main .book-now .row .col-6 .book-form form .part-3 {
+main .book-now .row .col-5 .book-form form .part-3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-main .book-now .row .col-6 .book-form form .part-3 .col-6 label {
+main .book-now .row .col-5 .book-form form .part-3 .col-6 label {
   font-size: 18px;
   color: #808080;
 }
-main .book-now .row .col-6 .book-form form .part-3 .col-6 input {
+main .book-now .row .col-5 .book-form form .part-3 .col-6 input {
   padding: 6px 12px;
   border-radius: 5px;
   border: 1px solid #808080;
 }
 @media (max-width: 992px) {
-  main .book-now .row .col-6 .book-form form .part-3 .col-6 input {
+  main .book-now .row .col-5 .book-form form .part-3 .col-6 input {
     width: 90%;
   }
 }
-main .book-now .row .col-6 .book-form form .textarea label {
+main .book-now .row .col-5 .book-form form .textarea label {
   font-size: 18px;
   color: #808080;
 }
-main .book-now .row .col-6 .book-form form .textarea #textarea {
+main .book-now .row .col-5 .book-form form .textarea #textarea {
   width: 50%;
   border-radius: 5px;
   border: 1px solid #808080;
 }
 @media (max-width: 992px) {
-  main .book-now .row .col-6 .book-form form .textarea #textarea {
+  main .book-now .row .col-5 .book-form form .textarea #textarea {
     width: 90%;
   }
 }
-main .book-now .row .col-6 .book-button button {
+main .book-now .row .col-5 .book-button button {
   border-radius: 5px;
+  transition: 0.5s;
+}
+main .book-now .row .col-5 .book-button button:hover {
+  background-color: #1a59a1;
 }
 
 main .team {
-  margin-top: 100px;
+  background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(32, 136, 255, 0.682) 0%), url("https://preview.colorlib.com/theme/waterboat/images/hero_2.jpg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+main .team .team-container {
+  background-color: white;
+  z-index: 6;
+  padding-bottom: 100px;
 }
 main .team .team-container .team-texts {
   text-align: center;
@@ -897,7 +916,16 @@ main .team .team-container .row .col-2 .team-card .team-card-text span {
 }
 
 main .customers {
-  margin-top: 100px;
+  background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(32, 136, 255, 0.682) 0%), url("https://preview.colorlib.com/theme/waterboat/images/hero_2.jpg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+main .customers .customers-container {
+  background-color: white;
+  z-index: 6;
+  padding-bottom: 100px;
 }
 main .customers .customers-container .customer-texts article {
   text-align: center;
@@ -975,4 +1003,42 @@ main .customers .customers-container .row .col-3 .customer-card .customer-card-b
 main .customers .customers-container .row .col-3 .customer-card .customer-card-bottom .customer-about article span {
   color: #808080;
   font-weight: 200;
+}
+
+main .contact {
+  background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(32, 136, 255, 0.682) 0%), url("https://preview.colorlib.com/theme/waterboat/images/hero_2.jpg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+main .contact .contact-container {
+  padding: 80px 100px;
+}
+@media (max-width: 992px) {
+  main .contact .contact-container {
+    background-position: center;
+  }
+}
+main .contact .contact-container .contact-texts article {
+  text-align: center;
+}
+main .contact .contact-container .contact-texts article h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 400;
+  font-family: Oswald;
+}
+main .contact .contact-container .contact-texts article p {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 200;
+  font-family: Open Sans;
+}
+main .contact .contact-container .contact-texts article button {
+  background-color: #ffa139;
+  transition: 0.5s;
+}
+main .contact .contact-container .contact-texts article button:hover {
+  background-color: #ca822f;
 }/*# sourceMappingURL=main.css.map */
