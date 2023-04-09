@@ -769,7 +769,7 @@ main .book-now .row .col-6 .book-form form .choose label {
   color: #808080;
 }
 main .book-now .row .col-6 .book-form form .choose #select {
-  width: 50%;
+  width: 100%;
   padding: 6px 12px;
   border-radius: 5px;
 }
@@ -894,4 +894,85 @@ main .team .team-container .row .col-2 .team-card .team-card-text span {
   font-size: 17px;
   font-family: Open Sans;
   color: #2089ff;
+}
+
+main .customers {
+  margin-top: 100px;
+}
+main .customers .customers-container .customer-texts article {
+  text-align: center;
+  position: relative;
+}
+main .customers .customers-container .customer-texts article span {
+  color: #2089ff;
+  font-family: Dancing Script;
+}
+main .customers .customers-container .customer-texts article h3 {
+  font-size: 28px;
+  font-family: Oswald;
+  font-weight: 400;
+}
+main .customers .customers-container .customer-texts article hr {
+  width: 50px;
+  border: 2px solid #2089ff;
+  position: absolute;
+  left: 48%;
+}
+main .customers .customers-container .row {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  main .customers .customers-container .row .col-md-6 {
+    width: 40%;
+  }
+}
+@media (max-width: 576px) {
+  main .customers .customers-container .row .col-sm-12 {
+    width: 70%;
+  }
+}
+main .customers .customers-container .row .col-3 .customer-card .customer-card-text blockquote {
+  border: 1px solid #808080;
+  border-radius: 7px;
+  position: relative;
+}
+main .customers .customers-container .row .col-3 .customer-card .customer-card-text blockquote p {
+  padding: 30px;
+  font-style: italic;
+  font-family: Open Sans;
+  color: #808080;
+  font-weight: 200;
+}
+main .customers .customers-container .row .col-3 .customer-card .customer-card-text blockquote i {
+  font-size: 30px;
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+}
+main .customers .customers-container .row .col-3 .customer-card .customer-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+main .customers .customers-container .row .col-3 .customer-card .customer-card-bottom .customer-image {
+  width: 15%;
+}
+main .customers .customers-container .row .col-3 .customer-card .customer-card-bottom .customer-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+main .customers .customers-container .row .col-3 .customer-card .customer-card-bottom .customer-about {
+  width: 80%;
+}
+main .customers .customers-container .row .col-3 .customer-card .customer-card-bottom .customer-about article {
+  font-family: Open Sans;
+}
+main .customers .customers-container .row .col-3 .customer-card .customer-card-bottom .customer-about article span {
+  color: #808080;
+  font-weight: 200;
 }/*# sourceMappingURL=main.css.map */

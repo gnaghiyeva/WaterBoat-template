@@ -1,0 +1,112 @@
+main .customers {
+    margin-top: 100px;
+    .customers-container {
+        .customer-texts {
+            article {
+                text-align: center;
+                position: relative;
+
+                span {
+                    color: $primary-blue;
+                    font-family: $font-dancing;
+
+                }
+
+                h3 {
+                    font-size: 28px;
+                    font-family: $font-oswald;
+                    font-weight: 400;
+                }
+                hr{
+                    width: 50px;
+                    border: 2px solid $primary-blue;
+                    position: absolute;
+                    left: 48%;
+                   
+                }
+            }
+        }
+
+        .row {
+            padding-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+
+            @include for-tablet-landscape-up{
+                .col-md-6{
+                    width: 40%;
+                }
+            }
+            @include for-mobile-landscape-up{
+                .col-sm-12{
+                    width: 70%;
+                }
+            }
+            .col-3 {
+                .customer-card {
+                    // border: 2px solid black;
+
+                    .customer-card-text {
+                        blockquote {
+                            border: 1px solid $primary-gray;
+                            border-radius: 7px;
+                            position: relative;
+
+                            p {
+                                padding: 30px;
+                                font-style: italic;
+                                font-family: $font-openSans;
+                                color: $primary-gray;
+                                font-weight: 200;
+                            }
+
+                            i{
+                                font-size: 30px;
+                                position: absolute;
+                                right: 5%;
+                                bottom: 10%;
+                            }
+
+                            
+                        }
+                    }
+
+                    .customer-card-bottom {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        padding-top: 20px;
+
+                        .customer-image {
+                            width: 15%;
+
+                            img {
+                                width: 100%;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        .customer-about {
+                            width: 80%;
+
+                            article {
+                                font-family: $font-openSans;
+
+                                strong {}
+
+                                span {
+                                    color: $primary-gray;
+                                    font-weight: 200;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
