@@ -740,6 +740,30 @@ main .book-now .row .col-6 .book-form form .part-1 .col-6 input {
   border-radius: 5px;
   border: 1px solid #808080;
 }
+@media (max-width: 992px) {
+  main .book-now .row .col-6 .book-form form .part-1 .col-6 input {
+    width: 90%;
+  }
+}
+main .book-now .row .col-6 .book-form form .part-2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .book-now .row .col-6 .book-form form .part-2 .col-6 label {
+  font-size: 18px;
+  color: #808080;
+}
+main .book-now .row .col-6 .book-form form .part-2 .col-6 input {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+}
+@media (max-width: 992px) {
+  main .book-now .row .col-6 .book-form form .part-2 .col-6 input {
+    width: 90%;
+  }
+}
 main .book-now .row .col-6 .book-form form .choose label {
   font-size: 18px;
   color: #808080;
@@ -753,8 +777,15 @@ main .book-now .row .col-6 .book-form form .choose #select option {
   font-size: 18px;
   color: #808080;
 }
+@media (max-width: 992px) {
+  main .book-now .row .col-6 .book-form form .choose #select {
+    width: 90%;
+  }
+}
 main .book-now .row .col-6 .book-form form .part-3 {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 main .book-now .row .col-6 .book-form form .part-3 .col-6 label {
   font-size: 18px;
@@ -765,6 +796,11 @@ main .book-now .row .col-6 .book-form form .part-3 .col-6 input {
   border-radius: 5px;
   border: 1px solid #808080;
 }
+@media (max-width: 992px) {
+  main .book-now .row .col-6 .book-form form .part-3 .col-6 input {
+    width: 90%;
+  }
+}
 main .book-now .row .col-6 .book-form form .textarea label {
   font-size: 18px;
   color: #808080;
@@ -773,6 +809,11 @@ main .book-now .row .col-6 .book-form form .textarea #textarea {
   width: 50%;
   border-radius: 5px;
   border: 1px solid #808080;
+}
+@media (max-width: 992px) {
+  main .book-now .row .col-6 .book-form form .textarea #textarea {
+    width: 90%;
+  }
 }
 main .book-now .row .col-6 .book-button button {
   border-radius: 5px;

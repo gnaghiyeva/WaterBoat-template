@@ -101,7 +101,7 @@ main .book-now {
                         
 
                         .col-6 {
-                           
+                         
                             label {
 
                                 font-size: 18px;
@@ -113,6 +113,37 @@ main .book-now {
                                 padding: 6px 12px;
                                 border-radius: 5px;
                                 border: 1px solid $primary-gray;
+
+                                @include for-tablet-landscape-up{
+                                    width: 90%;
+                                }
+                            }
+                        }
+                    }
+
+                    .part-2 {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        
+
+                        .col-6 {
+                         
+                            label {
+
+                                font-size: 18px;
+                                color: $primary-gray;
+                            }
+
+                            input {
+                                
+                                padding: 6px 12px;
+                                border-radius: 5px;
+                                border: 1px solid $primary-gray;
+
+                                @include for-tablet-landscape-up{
+                                    width: 90%;
+                                }
                             }
                         }
                     }
@@ -133,12 +164,18 @@ main .book-now {
                                 font-size: 18px;
                                 color: $primary-gray;
                             }
+
+                            @include for-tablet-landscape-up{
+                                width: 90%;
+                            }
                         }
 
                     }
 
                     .part-3{
                         display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
 
                         .col-6{
                             label {
@@ -150,6 +187,9 @@ main .book-now {
                                 padding: 6px 12px;
                                 border-radius: 5px;
                                 border: 1px solid $primary-gray;
+                                @include for-tablet-landscape-up{
+                                    width: 90%;
+                                }
                             }
 
 
@@ -166,6 +206,10 @@ main .book-now {
                             width: 50%;
                             border-radius: 5px;
                             border: 1px solid $primary-gray;
+
+                            @include for-tablet-landscape-up{
+                                width: 90%;
+                            }
                         }
 
                     }
